@@ -96,12 +96,11 @@ public class List {
             prev = current;
             current = current.next;
         }
-        if (current == null) { // Value not found
+        if (current == null) { 
             return false;
         }
 
-        // Remove the element.
-        if (prev == null) { // It is the first element
+        if (prev == null) { 
             first = first.next;
         } else {
             prev.next = current.next;
